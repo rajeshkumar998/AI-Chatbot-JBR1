@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot - JBR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-heading">
+    <h1>AI CHATBOT</h1>
+    <p>Talk with an AI assistant powered by JBR. Ask anything!</p>
+  </div>
+
+  <div class="chat-wrapper">
+    <div class="chatbot-container" id="chat-container">
+      <div class="chatbot-header">
+        <div class="left-controls">
+          <div class="brand">JBR</div>
+
+          <button class="nav-btn" id="undo-btn" title="Undo">Undo</button>
+          <button class="nav-btn" id="redo-btn" title="Redo">Redo</button>
+          <button class="nav-btn" id="voice-btn" title="Voice">🔊</button>
+          <button class="nav-btn" id="history-btn" title="History">📜</button>
+          <button class="nav-btn" id="toggle-view-btn" title="Toggle View">📱 Mobile View</button>
+        </div>
+
+        <div class="window-controls">
+          <button id="minimize-btn" title="Minimize">−</button>
+          <button id="maximize-btn" title="Maximize">☐</button>
+          <button id="close-btn" title="Close">✕</button>
+        </div>
+      </div>
+
+      <div class="chat-area" id="chat-area">
+        <div class="bot-message" id="greeting"></div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="chat-input-box" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="history-modal" id="history-modal" aria-hidden="true">
+    <div class="history-header">Chat History</div>
+    <div class="history-content" id="history-content"></div>
+    <div class="history-actions">
+      <button class="clear-history" id="clear-history">Clear History</button>
+      <button class="close-history" id="close-history">Close</button>
+    </div>
+  </div>
+
+  <script src="back.js"></script>
+</body>
+</html>
